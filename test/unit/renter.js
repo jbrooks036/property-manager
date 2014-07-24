@@ -33,5 +33,38 @@ describe('Renter', function(){
       expect(renter.cash).to.be.within(5000,12000);
     });
   });
+
+  describe('#payRent', function(){
+    it('should decrease cash if adequate cash', function(){
+      var renter = new Renter('Agnes', '39', 'female', 'Movie Star');
+
+      renter.cash = 3000;
+      console.log(renter);
+      renter.payRent(1000);
+      expect(renter.cash).to.equal(2000);
+    });
+
+    it('should evict if inadequate cash', function(){
+      var renter = new Renter('Agnes', '39', 'female', 'Movie Star');
+
+      renter.cash = 300;
+      console.log(renter);
+      renter.payRent(1000);
+      expect(renter.isEvicted).to.be.true;
+    });
+  });
+
+  describe('#party', function(){
+    it('should evict renter if noise is too loud', function(){
+      var renter = new Renter('Agnes', '39', 'female', 'Movie Star');
+      
+      while(!renter.isEvicted){
+        renter.party();
+      }
+
+      expect(renter.isEvicted).to.be.true;
+    });
+  });
 });
+
 
