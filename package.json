@@ -1,7 +1,7 @@
 {
-  "name": "property-manager",
+  "name": "property-manager2",
   "version": "0.0.0",
-  "description": "property management app",
+  "description": "property management app - bak",
   "main": "app/index.js",
   "bin": {"coveralls" : "./node_modules/coveralls/bin/coveralls.js"},
   "directories": {
@@ -13,15 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jbrooks036/property-manager"
+    "url": "https://github.com/jbrooks036/property-manager2"
   },
   "author": "JoAnn Brooks",
   "contributors": "Joy Pratt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jbrooks036/property-manager/issues"
+    "url": "https://github.com/jbrooks036/property-manager2/issues"
   },
-  "homepage": "https://github.com/jbrooks036/property-manager",
+  "homepage": "https://github.com/jbrooks036/property-manager2",
   "config": {
     "blanket": {
       "pattern": "/app/"
