@@ -39,7 +39,6 @@ describe('Renter', function(){
       var renter = new Renter('Agnes', '39', 'female', 'Movie Star');
 
       renter.cash = 3000;
-      console.log(renter);
       renter.payRent(1000);
       expect(renter.cash).to.equal(2000);
     });
@@ -48,7 +47,6 @@ describe('Renter', function(){
       var renter = new Renter('Agnes', '39', 'female', 'Movie Star');
 
       renter.cash = 300;
-      console.log(renter);
       renter.payRent(1000);
       expect(renter.isEvicted).to.be.true;
     });
