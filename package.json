@@ -1,32 +1,46 @@
 {
   "name": "property-manager",
   "version": "0.0.0",
-  "description": "property management app",
+  "description": "Simulated Property Manager wity Partying",
   "main": "app/index.js",
   "bin": {"coveralls" : "./node_modules/coveralls/bin/coveralls.js"},
+<<<<<<< HEAD
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "mocha test --recursive -R spec",
     "coveralls" : "./node_modules/mocha/bin/mocha test --recursive -r blanket -R mocha-lcov-reporter | coveralls "
+=======
+  "scripts": {
+    "test": "mocha test --recursive -R spec",
+    "coveralls" : "./node_modules/mocha/bin/mocha test --recursive -r blanket -R mocha-lcov-reporter | coveralls"
+>>>>>>> be56456a2cd6c361a9dade55d4b1aa5b1f51d7ef
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jbrooks036/property-manager"
+    "url": "https://github.com/nss-cohort-2014-06-07/property-manager"
   },
-  "author": "JoAnn Brooks",
-  "contributors": "Joy Pratt",
+  "author": "Joy Pratt <joympratt@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jbrooks036/property-manager/issues"
+    "url": "https://github.com/JoyP/property-manager/issues"
   },
+  "homepage": "https://github.com/JoyP/property-manager",
+  "config": {
+    "blanket": {
+      "pattern": "/app/"
+    }
+  },
+<<<<<<< HEAD
   "homepage": "https://github.com/jbrooks036/property-manager",
   "config": {
     "blanket": {
       "pattern": "/app/"
     }
   },
+=======
+>>>>>>> be56456a2cd6c361a9dade55d4b1aa5b1f51d7ef
   "dependencies": {
     "chalk": "^0.5.1",
     "lodash": "^2.4.1",
