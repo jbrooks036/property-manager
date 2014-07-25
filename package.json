@@ -10,13 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nss-cohort-2014-06-07/property-manager"
+    "url": "https://github.com/jbrooks036/property-manager2"
   },
   "author": "Joy Pratt <joympratt@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JoyP/property-manager/issues"
+    "url": "https://github.com/jbrooks036/property-manager2/issues"
   },
+  "homepage": "https://github.com/jbrooks036/property-manager2",
   "config": {
     "blanket": {
       "pattern": "/app/"
