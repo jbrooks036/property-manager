@@ -1,17 +1,32 @@
 /* jshint expr:true */
-/* global describe, it */
+/* global describe, it, before, beforeEach */
 
 'use strict';
 
 var expect = require('chai').expect;
-// var connect = require('../../app/lib/mongodb');
-// var Mongo = require('mongodb');
+var connect = require('../../app/lib/mongodb');
+var Mongo = require('mongodb');
 var Renter = require('../../app/models/renter');
 var Room = require('../../app/models/room');
 var Apartment = require('../../app/models/apartment');
 
+var apt1, apt2, apt3;
 
 describe('Apartment', function(){
+  before(function(done){
+    connect('property-manager-test', function(){
+      Apartment = require('../../app/models/apartment');
+      done();
+    });
+  });
+
+  beforeEach(function(done){
+    global.mongodb.collection('apartments').remove(function(){
+      done();
+    });
+  });
+
+
   describe('constructor', function(){
     it('should create an apartment', function(){
 

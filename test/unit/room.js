@@ -1,12 +1,12 @@
 
 /* jshint expr:true */
-/* global describe, it */
+/* global describe, it, before, beforeEach */
 
 'use strict';
 
 var expect = require('chai').expect;
-// var connect = require('../../app/lib/mongodb');
-// var Mongo = require('mongodb');
+var connect = require('../../app/lib/mongodb');
+var Mongo = require('mongodb');
 var Room = require('../../app/models/room');
 // var Item;
 
